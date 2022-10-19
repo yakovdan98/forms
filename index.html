@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/scripts.js"></script>
   <title>Form</title>
 </head>
+
 <body>
-  <form>
-    <label for="nameInput">Your Name</label>
-    <input type="text" name="nameInput" id="nameInput">
-  </form>
+  <div class="container">
+    <form>
+      <label for="nameInput">Your Name</label>
+      <input type="text" name="nameInput" id="nameInput">
+      <button type="submit">Show Letter</button>
+    </form>
+
+    <div class="hidden" id="letter">
+      <p>
+        <span id="name">[NAME]</span><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, harum maiores culpa dolorum corporis soluta modi
+        enim sit nulla eligendi, magnam aspernatur beatae non animi, quisquam ipsa inventore cumque velit?
+      </p>
+    </div>
+  </div>
 </body>
+
 </html>
