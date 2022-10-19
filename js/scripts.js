@@ -17,6 +17,16 @@ function createLetter() {
   let form = document.querySelector("form");
   setLetter(form);
   resetLetter(form);
+  respond();
+}
+
+function respond() {
+  let respond = document.getElementById("responseButton");
+  respond.onclick = function() {
+    const response = document.getElementById("response").value; 
+    document.querySelector("span#letterBody").innerText = response;
+  
+  }
 }
 
 window.onload = function () {
