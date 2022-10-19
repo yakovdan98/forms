@@ -10,6 +10,10 @@ function setLetter(form) {
     const name = document.getElementById("nameInput").value;
     document.querySelector("span#name").innerText = name;
     document.getElementById("letter").removeAttribute("class");
+    if (name === "Reed") {
+      document.getElementById("Reed").removeAttribute ("class");
+      document.getElementById("letterBody").setAttribute("class", "hidden");
+    }
   }
 }
 
@@ -28,6 +32,7 @@ function respond() {
   
   }
 }
+
 
 window.onload = function () {
   createLetter();
